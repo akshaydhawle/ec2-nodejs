@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("<h1>Express Demo App</h1> <p> Version : 3 </p>");
+  res.send("<h1>Express Demo App</h1> <p> Version : 4 </p>");
 });
 
 app.get("/products", (req, res) => {
@@ -14,6 +14,7 @@ app.get("/products", (req, res) => {
         <style>
             /* CSS styling for the table */
             table {
+            background: orange;  
             border-collapse: collapse;
             width: 100%;
             font-family: Arial, sans-serif;
